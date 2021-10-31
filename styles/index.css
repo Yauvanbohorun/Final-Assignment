@@ -1,6 +1,15 @@
+#nav .active, #nav > li > a:focus{
+  background: rgb(90, 196, 196);
+}
+
+ #nav li a{
+  color: white;
+}
+
 .center{
     text-align: center;
 }
+
 body{
      /* background-size:100px 100px; */
 
@@ -38,7 +47,7 @@ margin-right: 9px;
 
 .home-content{
   margin-top:10%;
-  margin-left:10%;
+  margin-left:5%;
 }
 .home-content div{
   display: inline-block;
