@@ -44,6 +44,7 @@ display: inline-block;
 .nav-bar-container{
   margin-top: 55px;
 }
+
 .home-content{
   /* margin-top:5%; */
   margin-left:5%;
@@ -78,9 +79,13 @@ img{
 
 }
 
-h2,h3,h4,p{
+h2,h3,h4,h6,p{
   color:white;
   text-align: center;
+}
+
+.left-align{
+  text-align: left;
 }
 
 .subtitle{
@@ -107,6 +112,47 @@ padding-bottom: 30px;
 
 .img-exercise{
   border: 1px solid #555;
-  height:600px;
+  height:520px;
   vertical-align: top;
+}
+
+.diet-plan-content{
+  width:50%;
+  border: 1px solid #555;
+  margin-right: 30px;
+  padding:20px;
+}
+
+.diet-plan-us{
+  border: 1px solid #555;
+  height:200px;
+  vertical-align: top;
+  margin-bottom: 35px;
+}
+.text-black{
+  color: black;
+}
+
+footer{
+  background-color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 27%;
+}
+
+.footer-logo{
+  padding-bottom: 20px;
+}
+
+.footer-logo-img{
+  background-color: rgb(238, 227, 227);
+}
+.footer-content-container{
+  display: flex;
+  text-align: left;
+}
+
+.footer-content-container > div {
+  flex: 1;
 }
