@@ -110,6 +110,18 @@ padding-bottom: 30px;
   padding-top: 35px;
 }
 
+.animate-text{
+  animation: color-me-in 3s infinite;
+}
+
+@keyframes color-me-in {
+  0% {
+    background: orange;
+  }
+  100% {
+    background: radial-gradient(circle , #020a61,#1f1a1a);
+    ;
+  }}
 .img-exercise{
   border: 1px solid #555;
   height:520px;
