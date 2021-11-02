@@ -38,22 +38,75 @@ display: inline-block;
 
 .instagram{
   position:relative;
-margin-right: 9px;
+  margin-right: 9px;
 }
 
 .nav-bar-container{
-  margin-top: 50px;
+  margin-top: 55px;
 }
-
 .home-content{
-  margin-top:10%;
+  /* margin-top:5%; */
   margin-left:5%;
+  padding-top: 2.5%;
 }
-.home-content div{
+.display-content div{
   display: inline-block;
+  flex: 35%;
+  /* max-height: fit-content; */
+  /* text-align: center; */
+  /* box-sizing: border-box; */
+  /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 
-.home-image{
+img{
   max-width: 100%;
   max-height: 100%;
+}
+
+.img-about-us{
+  height:400px;
+  vertical-align: top;
+  padding-top: 50px;  
+  border: 1px solid #555;
+}
+
+.sub-section{
+  margin-top: 20%;
+  text-align: center;
+  /* align-items: center; */
+
+}
+
+h2,h3,h4,p{
+  color:white;
+  text-align: center;
+}
+
+.subtitle{
+padding-bottom: 30px;
+}
+
+.about-us-content{
+  width:40%;
+  border: 1px solid #555;
+  margin-right: 30px;
+  padding-left: 35px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+
+.exercise-content{
+  width:60%;
+  border: 1px solid #555;
+  margin-right: 30px;
+  padding-left: 35px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+
+.img-exercise{
+  border: 1px solid #555;
+  height:600px;
+  vertical-align: top;
 }

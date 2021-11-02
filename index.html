@@ -10,7 +10,9 @@
         type="text/css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/themes/light.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css" type="text/css">
+    <link rel="stylesheet" href="styles/slideshow.css" type="text/css">
 </head>
 
 <body>
@@ -35,32 +37,108 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">DIET PLAN</a>
                     </li>
-                    <sl-divider style="--width: 2px;--color:red"></sl-divider>
+                    <sl-divider style="--width: 1px;--color:tomato"></sl-divider>
 
                 </div>
                 <a class="navbar-brand navbar-right" href="#">
                     <img alt="facebook-icon" src="images/Facebook-logo.png" width='48px' height='30px'>
                     <img alt="facebook-icon" src="images/instagram.png" class="instagram" width='25px' height='25px'>
-                    <img alt="facebook-icon" src="images/twitter 2.png" width='25px' height='25px'>
+                    <img alt="facebook-icon" src="images/twitter2.png" width='25px' height='25px'>
                 </a>
             </ul>
 
         </div>
 
-        <div class="home-content">
+        <div class="home-content display-content">
             <div>
                 <h2 style="color:white"><q> <span style="color:red"><strong>STOP</strong></span> WISHING <span
                             style="color:red"><strong>START</strong></span>
                         DOING </q></h2>
             </div>
             <div>
-                <img src="images/Full figure woman .png" alt="Logo" class="home-image" height='500px'></a>
+                <img src="images/Full-figure-woman .png" alt="Logo" class="home-image" height='500px'></a>
 
             </div>
-        </div>>
+        </div>
+        <div class="sub-section">
+            <div class="subtitle">
+                <h2>ABOUT US</h2>
+            </div>
+            <div class="display-content">
+                <div class="about-us-content">
+                    <p style="color:white">
+                        Over 50 regional and national obesity groups are represented by the World Obesity Federation,
+                        which unites professional representatives of the scientific, medical, and research sectors.
+                        World Obesity is a crucial partner with international obesity organizations, notably the World
+                        Health Organization.
+                        <br>
+                        <br>
+                        The World Obesity Federation put forwards a global effort to diminish,prevent and treat obesity.
+                        It
+                        was founded in 1999.
+                        <br>
+                        <br>
 
-    </div>
-    <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js"></script>
+                        The aim of the World Obesity Federationis to provide world-class training accessible to
+                        healthcare
+                        lifestyle.
+
+                    </p>
+                </div>
+                <div class="img-about-us">
+                    <img src="images/Primary-doctor-care.png" alt="Logo"></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="sub-section">
+            <div class="subtitle">
+                <h2>EXERCISE</h2>
+            </div>
+            <div class="display-content">
+                <div class="exercise-content">
+                    <div>
+                        <p style="text-align: left;">
+                            Physical exercise can help you stay in better shape and lower your chances of getting
+                            diseases
+                            like diabetes,canse, and cardiovascular diseaseases. Furthermore, it even enhances your
+                            health both now and in the future.
+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 style="text-align: left;">Types of Exercise</h4>
+                    </div>
+                    <div class="container slideshow">
+                        <ul id="all_slides">
+                            <li class="slide active"></li>
+                            <li class="slide"></li>
+                            <li class="slide"></li>
+                        </ul>
+                        <div class="buttons">
+                            <button class="controls" id="previous"><i class="far fa-arrow-alt-circle-left"></i></button>
+                            <button class="controls" id="pause"><i class="far fa-pause-circle"></i></button>
+                            <button class="controls" id="next"><i class="far fa-arrow-alt-circle-right"></i></button>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="text-align: center;"> A minimum of <span style="color:yellow;">30 minutes a day</span>
+                            can help you <br>live a healthy
+                            lifestyle.</p>
+                    </div>
+
+                </div>
+                <div class="img-exercise">
+                    <img src="images/BestHQwallpapers.png" alt="Logo">
+
+                </div>
+            </div>
+
+        </div>
+
+        <script type="module"
+            src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js"></script>
+        <script src="scripts/slideshow.js"></script>
 
 </body>
