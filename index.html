@@ -11,12 +11,13 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/themes/light.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="styles/index.css" type="text/css">
     <link rel="stylesheet" href="styles/slideshow.css" type="text/css">
 
 </head>
 
-<body>
+<body data-scroll-container>
     <div class="container">
         <div class="nav-bar-container">
 
@@ -48,7 +49,6 @@
             </ul>
 
         </div>
-
         <div id="home" class="home-content display-content">
             <div class="moto">
                 <h2><q> <span style="color:red"><strong>STOP</strong></span> WISHING <span
@@ -61,18 +61,23 @@
         </div>
         <div id="about-us" class="sub-section">
             <div class="subtitle">
-                <h2>ABOUT US</h2>
+                <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-repeat="true">
+                    ABOUT US</h2>
             </div>
             <div class="display-content">
                 <div class="about-us-content">
                     <p>
-                        Over 50 regional and national obesity groups are represented by the World Obesity Federation,
-                        which unites professional representatives of the scientific, medical, and research sectors.
-                        World Obesity is a crucial partner with international obesity organizations, notably the World
+                        Over 50 regional and national obesity groups are represented by the World Obesity
+                        Federation,
+                        which unites professional representatives of the scientific, medical, and research
+                        sectors.
+                        World Obesity is a crucial partner with international obesity organizations, notably the
+                        World
                         Health Organization.
                         <br>
                         <br>
-                        The World Obesity Federation put forwards a global effort to diminish,prevent and treat obesity.
+                        The World Obesity Federation put forwards a global effort to diminish,prevent and treat
+                        obesity.
                         It
                         was founded in 1999.
                         <br>
@@ -90,15 +95,18 @@
         </div>
         <div id="exercise" class="sub-section">
             <div class="subtitle">
-                <h2>EXERCISE</h2>
+                <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-repeat="true">
+                    EXERCISE</h2>
             </div>
             <div class="display-content">
                 <div class="exercise-content">
                     <div>
                         <p style="text-align: left;">
-                            Physical exercise can help you stay in better shape and lower your chances of getting
+                            Physical exercise can help you stay in better shape and lower your chances of
+                            getting
                             diseases
-                            like diabetes,canse, and cardiovascular diseaseases. Furthermore, it even enhances your
+                            like diabetes,canse, and cardiovascular diseaseases. Furthermore, it even enhances
+                            your
                             health both now and in the future.
 
                         </p>
@@ -120,7 +128,8 @@
                         </div>
                     </div>
                     <div>
-                        <p> A minimum of <span class="animate-text" style="color:yellow;">30 minutes a day</span>
+                        <p> A minimum of <span class="animate-text" style="color:yellow;">30 minutes a
+                                day</span>
                             can help you <br>live a healthy
                             lifestyle.</p>
                     </div>
@@ -134,7 +143,9 @@
         </div>
         <div id="diet-plan" class="sub-section">
             <div class="subtitle">
-                <h2>DIET PLAN</h2>
+                <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-repeat="true">
+                    DIET
+                    PLAN</h2>
             </div>
             <div class="display-content">
                 <div class="diet-plan-content">
@@ -147,7 +158,8 @@
                         <br><br>
                         <span style="color:yellow;">A healthy eating plan includes:</span>
                         <br><br>
-                        -Vegetables, fruits, whole grains, and fat-free or low-fat dairy products are emphasised.
+                        -Vegetables, fruits, whole grains, and fat-free or low-fat dairy products are
+                        emphasised.
                         <br><br>
                         -Adding on lean meats, poultry, fish, beans, eggs, and nuts.
                         <br><br>
@@ -168,6 +180,7 @@
             </div>
         </div>
     </div>
+
     <footer>
         <div class="footer-logo">
             <img src="images/Logo.png" class="footer-logo-img" alt="Logo" width='100px' height='50px'>
@@ -176,7 +189,8 @@
             <div>
                 <div>
                     <h6 class="left-align text-black">SCOPE E-learning</h6>
-                    <p class="left-align text-black">We provide the only internationally recogmised course on obesity
+                    <p class="left-align text-black">We provide the only internationally recogmised course on
+                        obesity
                         management. Read more here.
                     </p>
 
@@ -196,7 +210,9 @@
             <div>
                 <div>
                     <h6 class="left-align text-black">Our Policy Priorities</h6>
-                    <p class="left-align text-black">We have developed five key areas of policy that are a priority to
+                    <p class="left-align text-black">We have developed five key areas of policy that are a
+                        priority
+                        to
                         us.
                         Check out them?
                     </p>
@@ -205,8 +221,9 @@
                 </div>
             </div>
         </div>
-        <sl-divider style="--width: 1.5px;--color:cyan"></sl-divider>
-
+        <div>
+            <sl-divider style="--width: 1.5px;--color:cyan"></sl-divider>
+        </div>
         <div class="footer-content-container">
             <div>
                 <span><i class="fa fa-envelope"></i> <strong>Sign up for notifications</strong></span>
@@ -224,21 +241,10 @@
     <script type="module"
         src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-    <script>
-        let animation = anime({
-            targets: '.moto',
-            // Properties 
-            translateX: 100,
-            borderRadius: 50,
-            // Property Parameters
-            duration: 3000,
-            easing: 'linear',
-            // Animation Parameters
-            direction: 'alternate',
-            loop: true,
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 
+    <script src="scripts/main.js"></script>
     <script src="scripts/slideshow.js"></script>
+
 
 </body>
