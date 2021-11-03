@@ -11,10 +11,20 @@ let animation = anime({
     loop: true,
 });
 
+const scroller = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+    scrollFromAnywhere: true
+});
 window.addEventListener("load", () => {
 
-    const scroller = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true
-    });
+    scroller.update();
 });
+
+function goToExercise() {
+    const target = document.querySelector('#exercise');
+    scroller.scrollTo(target);
+    // scroller.stop();
+
+}
+// scroller.on("scroll", ScrollTrigger.update());

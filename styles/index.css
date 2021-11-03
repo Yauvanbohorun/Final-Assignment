@@ -177,3 +177,7 @@ footer{
   height: 100px;
   background-color: green;
 }
+/* 
+html {  
+  scroll-behavior: smooth;  
+} */
