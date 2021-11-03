@@ -13,6 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css" type="text/css">
     <link rel="stylesheet" href="styles/slideshow.css" type="text/css">
+
 </head>
 
 <body>
@@ -49,7 +50,7 @@
         </div>
 
         <div class="home-content display-content">
-            <div>
+            <div class="moto">
                 <h2><q> <span style="color:red"><strong>STOP</strong></span> WISHING <span
                             style="color:red"><strong>START</strong></span>
                         DOING </q></h2>
@@ -222,6 +223,22 @@
 
     <script type="module"
         src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script>
+        let animation = anime({
+            targets: '.moto',
+            // Properties 
+            translateX: 100,
+            borderRadius: 50,
+            // Property Parameters
+            duration: 3000,
+            easing: 'linear',
+            // Animation Parameters
+            direction: 'alternate',
+            loop: true,
+        });
+    </script>
+
     <script src="scripts/slideshow.js"></script>
 
 </body>

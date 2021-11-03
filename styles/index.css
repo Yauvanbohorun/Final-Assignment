@@ -168,3 +168,9 @@ footer{
 .footer-content-container > div {
   flex: 1;
 }
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
