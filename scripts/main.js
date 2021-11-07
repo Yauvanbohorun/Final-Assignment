@@ -16,25 +16,28 @@ const scroller = new LocomotiveScroll({
     smooth: true,
     scrollFromAnywhere: true
 });
-// $('#exampleModalCenter').on('show.bs.modal', function (event) {
-//     // scroller.stop();
-//     // scroller.update();
-// });
-// $("#exampleModalCenter").on('hidden.bs.modal', function (e) {
-//     // put your default event here
-//     scroller.start();
-//     // console.log("modal openpp");
-// });
+
+$('#moreinfo-diet-plan').on('show.bs.modal', function (event) {
+
+    scroller.stop();
+});
+$("#moreinfo-diet-plan").on('hidden.bs.modal', function (e) {
+    scroller.start();
+});
 
 window.addEventListener("load", () => {
+
     scroller.update();
+    setTimeout(function () {
+        document.getElementById("my_audio").play();
+    }, 5000);
+
 });
 
 function goToExercise() {
     const target = document.querySelector('#exercise');
     scroller.scrollTo(target);
 }
-
 
 const dots = document.getElementsByClassName("btn-dot");
 const boxes = document.getElementsByClassName('boxes');
@@ -71,7 +74,7 @@ function setActive(j) {
 function updateDots() {
     for (j = 0; j < boxes.length; j++) {
         if (isInViewport(boxes[j])) {
-            console.log("boxes[j]", boxes[j]);
+            // console.log("boxes[j]", boxes[j]);
 
             setInactive();
             setActive(j);

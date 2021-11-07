@@ -4,7 +4,6 @@
    --sl-color-neutral-200:transparent;
 }
 
-
 #nav .active, #nav > li > a:focus{
   background: rgb(90, 196, 196);
 }
@@ -80,14 +79,15 @@ height: 60px;
 
 .moto{
   display:block !important;
+  /* margin-top: 70px; */
   /* margin-left:3%; */
 }
 
 .img-slide-down-home{
-  display:block !important;
+  /* display:block !important; */
   height:40px;
   /* position: relative; */
-  position: absolute;
+  position: relative;
   top: 14.5%;
   margin-left:30%;
   /* margin-bottom:40%; */
@@ -106,7 +106,7 @@ height: 60px;
   margin-left:4%;
   margin-bottom: 80%;
   /* padding-bottom: 60%; */
-  padding-left: 10%;
+  padding-left: 12%;
   /* position: relative; */
 }
 
@@ -149,7 +149,7 @@ h2,h3,h4,h5,h6,p{
 }
 
 .left-align{
-  text-align: left;
+  text-align: left !important;
 }
 
 .subtitle{
@@ -189,6 +189,11 @@ padding-bottom: 30px;
 .img-exercise{
   border: 1px solid #555;
   vertical-align: top;
+  transition: transform 1s, filter .5s ease-out;
+}
+
+.img-exercise:hover {
+  transform: scale(1.1);
 }
 
 .diet-plan-content{
@@ -207,6 +212,11 @@ padding-bottom: 30px;
   /* height:200px; */
   vertical-align: top;
   /* margin-bottom: 28px; */
+  transition: transform 1s, filter .5s ease-out;
+}
+
+.diet-plan-img:hover {
+  transform: scale(1.1);
 }
 
 .card{
@@ -217,8 +227,9 @@ padding-bottom: 30px;
 }
 
 .text-black{
-  color: black;
+  color: black ;
 }
+
 
 footer{
   background-color: white;

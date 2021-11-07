@@ -18,6 +18,7 @@
 </head>
 
 <body data-scroll-container>
+    <audio id="my_audio" src="audio/NO-EXCUSES.mp3" loop="loop"></audio>
 
     <section data-scroll-section>
         <div>
@@ -206,8 +207,9 @@
                                     <svg height="70" width="320" xmlns="http://www.w3.org/2000/svg">
                                         <rect class="shape" height="70" width="320" />
                                     </svg>
-                                    <div class="text">
+                                    <div data-toggle="modal" data-target="#moreinfo-diet-plan" class="text">
                                         Click for more information
+
                                     </div>
                                 </div>
                             </sl-card>
@@ -216,75 +218,153 @@
                 </div>
             </div>
 
-            <!-- </section> -->
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="moreinfo-diet-plan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-black" id="exampleModalLongTitle">FOR ADULTS</h5>
+                    <br>
 
-            <!-- <section data-scroll-section> -->
-            <footer>
-                <div class="footer-logo" id="footer-logo">
-                    <img src="images/logo-footer.png" class="footer-logo-img" alt="Logo" width='100px' height='50px'>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="footer-content-container">
-                    <div>
-                        <div>
-                            <h6 class="left-align text-black">SCOPE E-learning</h6>
-                            <p class="left-align text-black">We provide the only internationally recogmised course on
-                                obesity
-                                management. Read more here.
-                            </p>
+                <div class="modal-body left-align">
+                    <h6 class="text-black left-align">A healthy diet includes the following:</h6>
+                    <p class="text-black left-align">• Fruit, vegetables, legumes (e.g. lentils and beans), nuts and
+                        whole grains
+                        (e.g. unprocessed
+                        maize, millet, oats, wheat and brown rice).</p><br>
+                    <p class="text-black left-align">• At least 400 g (i.e. five portions) of fruit and vegetables per
+                        day (2),
+                        excluding potatoes,
+                        sweet potatoes, cassava and other starchy roots.</p><br>
+                    <p class="text-black left-align">• Less than 10% of total energy intake from free sugars, which is
+                        equivalent
+                        to 50 g (or about 12
+                        level teaspoons) for a person of healthy body weight consuming about 2000 calories per day, but
+                        ideally is less than 5% of total energy intake for additional health benefits. </p><br>
+                    <p class="text-black left-align">• Free sugars are all sugars added to foods or drinks by the
+                        manufacturer,
+                        cook or consumer, as
+                        well as sugars naturally present in honey, syrups, fruit juices and fruit juice concentrates.
+                    </p><br>
+                    <p class="text-black left-align">• Less than 30% of total energy intake from fats. Unsaturated fats
+                        (found in
+                        fish, avocado and
+                        nuts, and in sunflower, soybean, canola and olive oils) are preferable to saturated fats (found
+                        in fatty meat, butter, palm and coconut oil, cream, cheese, ghee and lard) and trans-fats of all
+                        kinds, including both industrially-produced trans-fats (found in baked and fried foods, and
+                        pre-packaged snacks and foods, such as frozen pizza, pies, cookies, biscuits, wafers, and
+                        cooking oils and spreads) and ruminant trans-fats (found in meat and dairy foods from ruminant
+                        animals, such as cows, sheep, goats and camels). It is suggested that the intake of saturated
+                        fats be reduced to less than 10% of total energy intake and trans-fats to less than 1% of total
+                        energy intake. In particular, industrially-produced trans-fats are not part of a healthy diet
+                        and should be avoided.</p><br>
+                    <p class="text-black left-align">• Less than 5 g of salt (equivalent to about one teaspoon) per day.
+                        Salt
+                        should be iodized.</p>
+                    <br>
 
-                            <sl-button type="success">READ MORE</sl-button>
-                        </div>
-                    </div>
+                </div>
+                <h5 class="modal-title text-black" id="exampleModalLongTitle2">For infants and young children</h5>
+                <div class="modal-body">
+                    <p class="text-black left-align">In the first 2 years of a child’s life, optimal nutrition fosters
+                        healthy
+                        growth and improves
+                        cognitive development. It also reduces the risk of becoming overweight or obese and developing
+                        NCDs later in life.</p><br>
+                    <p class="text-black left-align">Advice on a healthy diet for infants and children is similar to
+                        that for
+                        adults, but the
+                        following elements are also important:</p><br>
+                    <p class="text-black left-align">• Infants should be breastfed exclusively during the first 6 months
+                        of life.
+                    </p><br>
+                    <p class="text-black left-align">• Infants should be breastfed continuously until 2 years of age and
+                        beyond.
+                    </p><br>
+                    <p class="text-black left-align">• From 6 months of age, breast milk should be complemented with a
+                        variety of
+                        adequate, safe and
+                        nutrient-dense foods. Salt and sugars should not be added to complementary foods.</p><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section data-scroll-section>
+        <footer>
+            <div class="footer-logo" id="footer-logo">
+                <img src="images/logo-footer.png" class="footer-logo-img" alt="Logo" width='100px' height='50px'>
+            </div>
+            <div class="footer-content-container">
+                <div>
                     <div>
-                        <div>
-                            <h6 class="left-align text-black">Global Obesity Observatory</h6>
-                            <p class="left-align text-black">We offer various statistics, map and key data.<br>
-                                Around the topic of obesity. You can find all that.<br>And more here.
-                            </p>
+                        <h6 class="left-align text-black">SCOPE E-learning</h6>
+                        <p class="left-align text-black">We provide the only internationally recogmised course on
+                            obesity
+                            management. Read more here.
+                        </p>
 
-                            <sl-button type="success">READ MORE</sl-button>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h6 class="left-align text-black">Our Policy Priorities</h6>
-                            <p class="left-align text-black">We have developed five key areas of policy that are a
-                                priority
-                                to
-                                us.
-                                Check out them?
-                            </p>
-
-                            <sl-button type="success">READ MORE</sl-button>
-                        </div>
+                        <sl-button type="success">READ MORE</sl-button>
                     </div>
                 </div>
                 <div>
-                    <sl-divider style="--width: 1.5px;--color:cyan"></sl-divider>
-                </div>
-                <div class="footer-content-container">
                     <div>
-                        <span><i class="fa fa-envelope"></i> <strong>Sign up for notifications</strong></span>
-                    </div>
-                    <div style="text-align: end;">
-                        <a class="navbar-brand navbar-right" href="#">
-                            <img alt="facebook-icon" src="images/Facebook-logo.png" width='48px' height='30px'>
-                            <img alt="facebook-icon" src="images/instagram.png" class="instagram" width='25px'
-                                height='25px'>
-                            <img alt="facebook-icon" src="images/twitter2.png" width='25px' height='25px'>
-                        </a>
-                    </div>
+                        <h6 class="left-align text-black">Global Obesity Observatory</h6>
+                        <p class="left-align text-black">We offer various statistics, map and key data.<br>
+                            Around the topic of obesity. You can find all that.<br>And more here.
+                        </p>
 
+                        <sl-button type="success">READ MORE</sl-button>
+                    </div>
                 </div>
-                <div class="center"><span>This website has been created as part of an assignment in an approved course
-                        of study for
-                        Curtin University and contains copyright material not created by the author. All copyright
-                        material used remains copyright of the respective owners and has been been used here
-                        pursuant to section 40 of the copyright act 1968 ( Commonwealth of Australia). No part of
-                        this work may be reproduced without consent of the original copyright owners. See code
-                        comments for references. </span></div>
-                <div class="center"><span>C <strong>Worldobesity 2021</strong> </span></div>
-            </footer>
+                <div>
+                    <div>
+                        <h6 class="left-align text-black">Our Policy Priorities</h6>
+                        <p class="left-align text-black">We have developed five key areas of policy that are a
+                            priority
+                            to
+                            us.
+                            Check out them?
+                        </p>
+
+                        <sl-button type="success">READ MORE</sl-button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <sl-divider style="--width: 1.5px;--color:cyan"></sl-divider>
+            </div>
+            <div class="footer-content-container">
+                <div>
+                    <span><i class="fa fa-envelope"></i> <strong>Sign up for notifications</strong></span>
+                </div>
+                <div style="text-align: end;">
+                    <a class="navbar-brand navbar-right" href="#">
+                        <img alt="facebook-icon" src="images/Facebook-logo.png" width='48px' height='30px'>
+                        <img alt="facebook-icon" src="images/instagram.png" class="instagram" width='25px'
+                            height='25px'>
+                        <img alt="facebook-icon" src="images/twitter2.png" width='25px' height='25px'>
+                    </a>
+                </div>
+
+            </div>
+            <div class="center"><span>This website has been created as part of an assignment in an approved course
+                    of study for
+                    Curtin University and contains copyright material not created by the author. All copyright
+                    material used remains copyright of the respective owners and has been been used here
+                    pursuant to section 40 of the copyright act 1968 ( Commonwealth of Australia). No part of
+                    this work may be reproduced without consent of the original copyright owners. See code
+                    comments for references. </span></div>
+            <div class="center"><span>© <strong>Worldobesity 2021</strong> </span></div>
+        </footer>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
