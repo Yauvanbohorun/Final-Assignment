@@ -1,5 +1,3 @@
-// "use strict";
-
 /*
   since querySelectorAll gives us the total number
   of items of the class "controls"

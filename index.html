@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
@@ -14,247 +14,296 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="styles/index.css" type="text/css">
     <link rel="stylesheet" href="styles/slideshow.css" type="text/css">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 </head>
 
 <body data-scroll-container>
-    <div>
-        <!-- <section data-scroll-section> -->
 
-
-        <div class="container">
-            <div class="nav-bar-container">
-
-                <ul class="nav nav-pills center" id="nav">
-                    <div class='nav-brand'>
-                        <img src="images/Logo.png" alt="Logo" width='100px' height='50px'>
+    <section data-scroll-section>
+        <div>
+            <div class="main-container" id="btn-sticky">
+                <div id="screenFiller" class="screenFiller boxes">
+                    <div class="nav-bar-container">
+                        <ul class="nav nav-pills center" id="nav">
+                            <div class='nav-brand'>
+                                <img src="images/Logo.png" id="logo" alt="Logo">
+                            </div>
+                            <div>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about-us" data-scroll-to>ABOUT US</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="" data-scroll-to onclick="goToExercise()">EXERCISE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#diet-plan" data-scroll-to>DIET PLAN</a>
+                                </li>
+                                <sl-divider style="--width: 1px;--color:tomato"></sl-divider>
+                            </div>
+                            <a class="navbar-brand navbar-right" href="#">
+                                <img alt="facebook-icon" src="images/Facebook-logo.png">
+                                <img alt="instagram-icon" src="images/instagram.png" class="instagram">
+                                <img alt="twitter-icon" src="images/twitter2.png">
+                            </a>
+                        </ul>
                     </div>
-                    <div>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-us" data-scroll-to>ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="" data-scroll-to onclick="goToExercise()">EXERCISE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#diet-plan" data-scroll-to>DIET PLAN</a>
-                        </li>
-                        <sl-divider style="--width: 1px;--color:tomato"></sl-divider>
+                    <div id="home" class="home-content display-content">
+                        <div class="wrapper">
+                            <div class="moto">
+                                <h2><q> <span style="color:red"><strong>STOP</strong></span> WISHING <span
+                                            style="color:red"><strong>START</strong></span>
+                                        DOING </q></h2>
+                            </div>
+                            <div class="img-slide-down-home" style="display:block;">
+                                <a href="#about-us" data-scroll-to><img src="images/down-down1.png"
+                                        alt="img-slide-down"></a>
+                            </div>
+                        </div>
+                        <div class="home-image">
+                            <img src="images/Full-figure-woman .png" height="500px" alt="Logo"></a>
+                        </div>
 
+                        <div class="btn-dots" data-scroll data-scroll-sticky data-scroll-target="#btn-sticky">
+                            <!-- <div> -->
+                            <div class="btn-dot active-btn"><i class="fa fa-circle"></i></div>
+                            <div class="btn-dot"><i class="fa fa-circle"></i></div>
+                            <div class="btn-dot"><i class="fa fa-circle"></i></div>
+                            <div class="btn-dot"><i class="fa fa-circle"></i></div>
+                            <!-- </div> -->
+                        </div>
                     </div>
-                    <a class="navbar-brand navbar-right" href="#">
-                        <img alt="facebook-icon" src="images/Facebook-logo.png" width='48px' height='30px'>
-                        <img alt="instagram-icon" src="images/instagram.png" class="instagram" width='25px'
-                            height='25px'>
-                        <img alt="twitter-icon" src="images/twitter2.png" width='25px' height='25px'>
-                    </a>
-                </ul>
 
-            </div>
-            <div id="home" class="home-content display-content">
-                <div class="moto">
-                    <h2><q> <span style="color:red"><strong>STOP</strong></span> WISHING <span
-                                style="color:red"><strong>START</strong></span>
-                            DOING </q></h2>
                 </div>
-                <div>
-                    <img src="images/Full-figure-woman .png" alt="Logo" class="home-image" height='500px'></a>
-                </div>
-            </div>
-            <div id="about-us" class="sub-section">
-                <div class="subtitle">
-                    <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-repeat="true">
-                        ABOUT US</h2>
-                </div>
-                <div class="display-content">
-                    <div class="about-us-content">
-                        <p>
-                            Over 50 regional and national obesity groups are represented by the World Obesity
-                            Federation,
-                            which unites professional representatives of the scientific, medical, and research
-                            sectors.
-                            World Obesity is a crucial partner with international obesity organizations, notably the
-                            World
-                            Health Organization.
-                            <br>
-                            <br>
-                            The World Obesity Federation put forwards a global effort to diminish,prevent and treat
-                            obesity.
-                            It
-                            was founded in 1999.
-                            <br>
-                            <br>
-
-                            The aim of the World Obesity Federationis to provide world-class training accessible to
-                            healthcare
-                            lifestyle.
-                        </p>
+                <!-- <section data-scroll-section> -->
+                <div id="about-us" class="sub-section boxes">
+                    <div class="subtitle">
+                        <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3"
+                            data-scroll-repeat="true">
+                            ABOUT US</h2>
                     </div>
-                    <div class="img-about-us">
-                        <img src="images/Primary-doctor-care.png" alt="Logo"></a>
+                    <div class="display-content">
+                        <div class="about-us-content">
+                            <p>
+                                Over 50 regional and national obesity groups are represented by the World Obesity
+                                Federation,
+                                which unites professional representatives of the scientific, medical, and research
+                                sectors.
+                                World Obesity is a crucial partner with international obesity organizations, notably the
+                                World
+                                Health Organization.
+                                <br>
+                                <br>
+                                The World Obesity Federation put forwards a global effort to diminish,prevent and treat
+                                obesity.
+                                It
+                                was founded in 1999.
+                                <br>
+                                <br>
+
+                                The aim of the World Obesity Federationis to provide world-class training accessible to
+                                healthcare
+                                lifestyle.
+                            </p>
+                        </div>
+                        <div class="img-about-us">
+                            <img src="images/Primary-doctor-care.png" height="300px" alt="Logo"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="exercise" class="sub-section">
-                <div class="subtitle">
-                    <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-repeat="true">
-                        EXERCISE</h2>
+                <!-- </section> -->
+                <div id="exercise" class="sub-section boxes">
+                    <div class="subtitle">
+                        <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3"
+                            data-scroll-repeat="true">
+                            EXERCISE</h2>
+                    </div>
+                    <div class="display-content">
+                        <div class="exercise-content">
+                            <div>
+                                <p style="text-align: left;">
+                                    Physical exercise can help you stay in better shape and lower your chances of
+                                    getting
+                                    diseases
+                                    like diabetes,canse, and cardiovascular diseaseases. Furthermore, it even enhances
+                                    your
+                                    health both now and in the future.
+
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5 style="padding-bottom: 12px;" class="left-align">Types of Exercise</h5>
+                            </div>
+                            <div class="container slideshow">
+                                <ul id="all_slides">
+                                    <li class="slide active"></li>
+                                    <li class="slide"></li>
+                                    <li class="slide"></li>
+                                    <li class="slide"></li>
+                                    <li class="slide"></li>
+                                    <li class="slide"></li>
+                                </ul>
+                                <div class="buttons">
+                                    <button class="controls" id="previous"><i
+                                            class="far fa-arrow-alt-circle-left"></i></button>
+                                    <button class="controls" id="pause"><i class="far fa-pause-circle"></i></button>
+                                    <button class="controls" id="next"><i
+                                            class="far fa-arrow-alt-circle-right"></i></button>
+                                </div>
+                            </div>
+                            <div>
+                                <p> A minimum of <span class="animate-text" style="color:yellow;">30 minutes a
+                                        day</span>
+                                    can help you <br>live a healthy
+                                    lifestyle.</p>
+                            </div>
+                        </div>
+                        <div class="img-exercise">
+                            <img src="images/BestHQwallpapers.png" height="540" alt="Logo">
+                        </div>
+                    </div>
                 </div>
-                <div class="display-content">
-                    <div class="exercise-content">
-                        <div>
+                <div id="diet-plan" class="sub-section boxes">
+                    <div class="subtitle">
+                        <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3"
+                            data-scroll-repeat="true">
+                            DIET
+                            PLAN</h2>
+                    </div>
+                    <div class="display-content">
+                        <div class="diet-plan-content">
                             <p style="text-align: left;">
-                                Physical exercise can help you stay in better shape and lower your chances of
-                                getting
-                                diseases
-                                like diabetes,canse, and cardiovascular diseaseases. Furthermore, it even enhances
-                                your
-                                health both now and in the future.
+                                A healthy eating plan provides your body with the nutrition it requires
+                                on a daily basis while also allowing you to stick to your daily calorie gola for weight
+                                loss.
+                                <br>
+                                A healthy eating plan can also help you avoid heart disease and other illnesses.
+                                <br><br>
+                                <span style="color:yellow;">A healthy eating plan includes:</span>
+                                <br><br>
+                                -Vegetables, fruits, whole grains, and fat-free or low-fat dairy products are
+                                emphasised.
+                                <br><br>
+                                -Adding on lean meats, poultry, fish, beans, eggs, and nuts.
+                                <br><br>
+                                -Cards
+                                <br><br>
+                                <span style="color:red;">Avoid:</span>
+                                <br><br>
+                                Saturated and trans fats, salt and added sugars are all restricted while dieting.
 
                             </p>
                         </div>
-
-                        <div>
-                            <h4 style="text-align: left;">Types of Exercise</h4>
+                        <div style="position: relative;top: -228px;">
+                            <sl-card class="card-image">
+                                <div style="display:block; margin-bottom:15%;" class="diet-plan-img"><img
+                                        src="images/Obesity-diet-chart.png" height="280px" alt="Logo">
+                                </div>
+                                <div class="svg-wrapper">
+                                    <svg height="70" width="320" xmlns="http://www.w3.org/2000/svg">
+                                        <rect class="shape" height="70" width="320" />
+                                    </svg>
+                                    <div class="text">
+                                        Click for more information
+                                    </div>
+                                </div>
+                            </sl-card>
                         </div>
-                        <div class="container slideshow">
-                            <ul id="all_slides">
-                                <li class="slide active"></li>
-                                <li class="slide"></li>
-                                <li class="slide"></li>
-                            </ul>
-                            <div class="buttons">
-                                <button class="controls" id="previous"><i
-                                        class="far fa-arrow-alt-circle-left"></i></button>
-                                <button class="controls" id="pause"><i class="far fa-pause-circle"></i></button>
-                                <button class="controls" id="next"><i
-                                        class="far fa-arrow-alt-circle-right"></i></button>
-                            </div>
-                        </div>
-                        <div>
-                            <p> A minimum of <span class="animate-text" style="color:yellow;">30 minutes a
-                                    day</span>
-                                can help you <br>live a healthy
-                                lifestyle.</p>
-                        </div>
-
-                    </div>
-                    <div class="img-exercise">
-                        <img src="images/BestHQwallpapers.png" alt="Logo">
                     </div>
                 </div>
-
             </div>
-            <div id="diet-plan" class="sub-section">
-                <div class="subtitle">
-                    <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-repeat="true">
-                        DIET
-                        PLAN</h2>
-                </div>
-                <div class="display-content">
-                    <div class="diet-plan-content">
-                        <p style="text-align: left;">
-                            A healthy eating plan provides your body with the nutrition it requires
-                            on a daily basis while also allowing you to stick to your daily calorie gola for weight
-                            loss.
-                            <br>
-                            A healthy eating plan can also help you avoid heart disease and other illnesses.
-                            <br><br>
-                            <span style="color:yellow;">A healthy eating plan includes:</span>
-                            <br><br>
-                            -Vegetables, fruits, whole grains, and fat-free or low-fat dairy products are
-                            emphasised.
-                            <br><br>
-                            -Adding on lean meats, poultry, fish, beans, eggs, and nuts.
-                            <br><br>
-                            -Cards
-                            <br><br>
-                            <span style="color:red;">Avoid:</span>
-                            <br><br>
-                            Saturated and trans fats, salt and added sugars are all restricted while dieting.
 
-                        </p>
+            <!-- </section> -->
+
+            <!-- <section data-scroll-section> -->
+            <footer>
+                <div class="footer-logo" id="footer-logo">
+                    <img src="images/logo-footer.png" class="footer-logo-img" alt="Logo" width='100px' height='50px'>
+                </div>
+                <div class="footer-content-container">
+                    <div>
+                        <div>
+                            <h6 class="left-align text-black">SCOPE E-learning</h6>
+                            <p class="left-align text-black">We provide the only internationally recogmised course on
+                                obesity
+                                management. Read more here.
+                            </p>
+
+                            <sl-button type="success">READ MORE</sl-button>
+                        </div>
                     </div>
                     <div>
-                        <div class="diet-plan-us"><img src="images/Obesity-diet-chart.png" alt="Logo"></a></div>
-                        <div style="display: block;">
-                            <sl-button type="primary">Click to view more information</sl-button>
+                        <div>
+                            <h6 class="left-align text-black">Global Obesity Observatory</h6>
+                            <p class="left-align text-black">We offer various statistics, map and key data.<br>
+                                Around the topic of obesity. You can find all that.<br>And more here.
+                            </p>
+
+                            <sl-button type="success">READ MORE</sl-button>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h6 class="left-align text-black">Our Policy Priorities</h6>
+                            <p class="left-align text-black">We have developed five key areas of policy that are a
+                                priority
+                                to
+                                us.
+                                Check out them?
+                            </p>
+
+                            <sl-button type="success">READ MORE</sl-button>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div>
+                    <sl-divider style="--width: 1.5px;--color:cyan"></sl-divider>
+                </div>
+                <div class="footer-content-container">
+                    <div>
+                        <span><i class="fa fa-envelope"></i> <strong>Sign up for notifications</strong></span>
+                    </div>
+                    <div style="text-align: end;">
+                        <a class="navbar-brand navbar-right" href="#">
+                            <img alt="facebook-icon" src="images/Facebook-logo.png" width='48px' height='30px'>
+                            <img alt="facebook-icon" src="images/instagram.png" class="instagram" width='25px'
+                                height='25px'>
+                            <img alt="facebook-icon" src="images/twitter2.png" width='25px' height='25px'>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="center"><span>This website has been created as part of an assignment in an approved course
+                        of study for
+                        Curtin University and contains copyright material not created by the author. All copyright
+                        material used remains copyright of the respective owners and has been been used here
+                        pursuant to section 40 of the copyright act 1968 ( Commonwealth of Australia). No part of
+                        this work may be reproduced without consent of the original copyright owners. See code
+                        comments for references. </span></div>
+                <div class="center"><span>C <strong>Worldobesity 2021</strong> </span></div>
+            </footer>
         </div>
-        <!-- </section> -->
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
-        <!-- <section data-scroll-section> -->
-        <footer>
-            <div class="footer-logo">
-                <img src="images/Logo.png" class="footer-logo-img" alt="Logo" width='100px' height='50px'>
-            </div>
-            <div class="footer-content-container">
-                <div>
-                    <div>
-                        <h6 class="left-align text-black">SCOPE E-learning</h6>
-                        <p class="left-align text-black">We provide the only internationally recogmised course on
-                            obesity
-                            management. Read more here.
-                        </p>
-
-                        <sl-button type="success">READ MORE</sl-button>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h6 class="left-align text-black">Global Obesity Observatory</h6>
-                        <p class="left-align text-black">We offer various statistics, map and key data.<br>
-                            Around the topic of obesity. You can find all that.<br>And more here.
-                        </p>
-
-                        <sl-button type="success">READ MORE</sl-button>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h6 class="left-align text-black">Our Policy Priorities</h6>
-                        <p class="left-align text-black">We have developed five key areas of policy that are a
-                            priority
-                            to
-                            us.
-                            Check out them?
-                        </p>
-
-                        <sl-button type="success">READ MORE</sl-button>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <sl-divider style="--width: 1.5px;--color:cyan"></sl-divider>
-            </div>
-            <div class="footer-content-container">
-                <div>
-                    <span><i class="fa fa-envelope"></i> <strong>Sign up for notifications</strong></span>
-                </div>
-                <div style="text-align: end;">
-                    <a class="navbar-brand navbar-right" href="#">
-                        <img alt="facebook-icon" src="images/Facebook-logo.png" width='48px' height='30px'>
-                        <img alt="facebook-icon" src="images/instagram.png" class="instagram" width='25px'
-                            height='25px'>
-                        <img alt="facebook-icon" src="images/twitter2.png" width='25px' height='25px'>
-                    </a>
-                </div>
-            </div>
-        </footer>
-        <!-- </section> -->
-    </div>
     <script type="module"
         src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 
+
     <script src="scripts/main.js"></script>
     <script src="scripts/slideshow.js"></script>
-
 
 </body>
