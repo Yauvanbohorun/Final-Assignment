@@ -93,21 +93,27 @@ height: 60px;
   /* margin-bottom:40%; */
 }
 
+.img-slide-down-home img{
+  animation: color-slide-down 3s infinite;
+}
+
+@keyframes color-slide-down {
+  0% {
+    border-radius: 15px;
+    background: orange;
+  }
+  100% {
+    background: transparent;
+  }}
+
 .home-content{
-  /* margin-top:5%; */
-  /* overflow: auto; */
   margin-left:5%;
-  /* padding-top: 2.5%; */
-  /* margin-bottom:2%; */
 }
 
 .home-image{
-  /* height: 500px; */
   margin-left:4%;
   margin-bottom: 80%;
-  /* padding-bottom: 60%; */
   padding-left: 12%;
-  /* position: relative; */
 }
 
 .display-content div{
@@ -126,21 +132,9 @@ img{
   border: 1px solid #555;
 }
 
-.img-slide-down-aboutus{
-  display:block !important;
-  height:40px;
-  /* position: relative; */
-  position: absolute;
-  top: 35.5%;
-  margin-left:50%;
-  /* margin-bottom:40%; */
-}
-
 .sub-section{
   margin-top: 20%;
   text-align: center;
-  /* align-items: center; */
-
 }
 
 h2,h3,h4,h5,h6,p{
@@ -205,13 +199,11 @@ padding-bottom: 30px;
 .box {
   display : flex;
  flex-direction : column;
-  
 }
+
 .diet-plan-img{
   border: 1px solid #555;
-  /* height:200px; */
   vertical-align: top;
-  /* margin-bottom: 28px; */
   transition: transform 1s, filter .5s ease-out;
 }
 
@@ -229,7 +221,6 @@ padding-bottom: 30px;
 .text-black{
   color: black ;
 }
-
 
 footer{
   background-color: white;
@@ -263,9 +254,6 @@ footer{
 
 .svg-wrapper{
   height:70px;
-  /* margin:0 auto; */
-  /* position: relative; */
-  /* top:50%; */
   transform:translateY(-50%);
   width: 320px;
   padding-bottom: 20px;

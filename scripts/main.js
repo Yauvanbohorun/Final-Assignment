@@ -41,12 +41,22 @@ function goToExercise() {
 
 const dots = document.getElementsByClassName("btn-dot");
 const boxes = document.getElementsByClassName('boxes');
-// console.log("dots ", dots);
-// console.log("boxes ", boxes);
+console.log("dots ", dots);
+console.log("boxes ", boxes);
+
+function isInViewportCompletely(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
 
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
+        // rect.top >= 0 &&
         rect.top <= rect.height / 2 &&
         rect.bottom >= rect.height / 2 &&
         rect.left >= 0 &&
@@ -67,22 +77,36 @@ function setInactive() {
 }
 
 function setActive(j) {
-    // console.log("j", j);
     dots[j].classList.replace("disabled-btn", "active-btn");
 }
 
-function updateDots() {
-    for (j = 0; j < boxes.length; j++) {
-        if (isInViewport(boxes[j])) {
-            // console.log("boxes[j]", boxes[j]);
+function updateDots(k) {
+    setInactive();
+    setActive(k);
+}
 
-            setInactive();
-            setActive(j);
+function updateLongScrollingButtons() {
+    // if (isInViewportCompletely(boxes[0])) {
+    //     updateDots(0);
+    // } else if ((isInViewportCompletely(boxes[boxes.length - 1]))) {
+    //     updateDots(boxes.length - 1);
+    // } else {
+    //     for (j = 1; j < boxes.length - 1; j++) {
+    //         if (isInViewport(boxes[j])) {
+    //             updateDots(j);
+    //             break;
+    //         }
+    //     }
+    // }
+    for (j = 0; j < boxes.length; j++) {
+        if (isInViewportCompletely(boxes[j])) {
+            updateDots(j);
             break;
         }
     }
+
 }
 
 scroller.on('scroll', func => {
-    updateDots();
+    updateLongScrollingButtons();
 });
