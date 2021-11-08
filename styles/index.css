@@ -37,7 +37,7 @@ height: 60px;
 	top:0; 
 	left:0; 
   padding-right: 20%;
-  height: 90px;
+  height: 70px;
   
 } 
 
@@ -56,10 +56,7 @@ height: 60px;
 }
 
 .btn-dots{
-  /* display:block; */
   margin-bottom: 30px;
-  /* top: 70% */
-
 }
 
 .btn-dot{
@@ -79,8 +76,6 @@ height: 60px;
 
 .moto{
   display:block !important;
-  /* margin-top: 70px; */
-  /* margin-left:3%; */
 }
 
 .img-slide-down-home{

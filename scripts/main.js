@@ -53,18 +53,6 @@ function isInViewportCompletely(el) {
     );
 }
 
-function isInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        // rect.top >= 0 &&
-        rect.top <= rect.height / 2 &&
-        rect.bottom >= rect.height / 2 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
 function setInactive() {
     for (i = 0; i < dots.length; i++) {
         if (dots[i].classList.contains("active-btn")) {
@@ -86,25 +74,12 @@ function updateDots(k) {
 }
 
 function updateLongScrollingButtons() {
-    // if (isInViewportCompletely(boxes[0])) {
-    //     updateDots(0);
-    // } else if ((isInViewportCompletely(boxes[boxes.length - 1]))) {
-    //     updateDots(boxes.length - 1);
-    // } else {
-    //     for (j = 1; j < boxes.length - 1; j++) {
-    //         if (isInViewport(boxes[j])) {
-    //             updateDots(j);
-    //             break;
-    //         }
-    //     }
-    // }
     for (j = 0; j < boxes.length; j++) {
         if (isInViewportCompletely(boxes[j])) {
             updateDots(j);
             break;
         }
     }
-
 }
 
 scroller.on('scroll', func => {
