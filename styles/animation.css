@@ -1,0 +1,41 @@
+@keyframes color-slide-down {
+    0% {
+        border-radius: 40px;
+        background: orange;
+    }
+    100% {
+        background: transparent;
+    }
+}
+
+@keyframes color-me-in {
+    0% {
+        background: orange;
+    }
+    100% {
+        background: radial-gradient(circle, #020a61, #1f1a1a);
+    }
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+    }
+    100% {
+        stroke-dasharray: 780;
+        stroke-dashoffset: 0;
+        stroke-width: 2px;
+        fill: transparent;
+    }
+}
+
+.animate-text {
+    animation: color-me-in 3s infinite;
+}
+
+.svg-wrapper:hover .shape {
+    -webkit-animation: 1s draw linear forwards;
+    animation: 1s draw linear forwards;
+}

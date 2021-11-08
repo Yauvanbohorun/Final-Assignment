@@ -3,272 +3,64 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Check if an element is visible in the viewport</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/themes/light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
     <style>
-        .btn-dot {
-            color: blue;
+        body {
+            margin: 0;
         }
 
-        .active-btn {
-            color: red !important;
-        }
-
-        .disabled-btn {
-            color: blue !important;
-        }
-
-        .thumbnail:hover {
+        .images {
             position: relative;
-            /* top: -25px;
-            left: -35px; */
-            width: 120px;
-            height: auto;
-            /* display: block; */
-            /* z-index: 999; */
+            height: 100%;
         }
 
-        /* [1] The container */
-        .img-hover-zoom {
-            height: 300px;
-            width: 300px;
-            /* [1.1] Set it as per your need */
-            overflow: hidden;
-            /* [1.2] Hide the overflowing of child elements */
+        .image {
+            /* position: absolute; */
+
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            width: 50%;
+            height: 50%;
+            /* opacity: 0.5; */
         }
 
-        /* [2] Transition property for smooth transformation of images */
-        /* .img-hover-zoom img {
-            transition: transform .5s ease;
-        } */
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
 
-        /* [3] Finally, transforming the image when container gets hovered */
-        .img-hover-zoom:hover img {
-            transform: scale(1.5);
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 50%;
+            margin-top: auto;
         }
     </style>
 </head>
 
 <body>
-    <div class="btn-dots" style="position:fixed;">
-        <!-- <div> -->
-        <div class="btn-dot active-btn"><span>golo</span></div>
-        <div class="btn-dot"><span>golo</span></i></div>
-        <div class="btn-dot"><span>golo</span></i></div>
-        <!-- </div> -->
-    </div>
-    <div class="boxes box" id="box" style="background-color: turquoise;">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>hrllo</p>
-    </div>
-    <div class="boxes box1" id="box1" style="background-color: rgb(224, 64, 157);">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>hrllo</p>
-    </div>
-    <div id="message">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        Please scroll to check if the box is visible
-    </div>
-    <div id="message1">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        Please scroll to check if the box is visible
-    </div>
-    <div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
-    <sl-button>Open Dialog</sl-button>
-    <sl-dialog label="Dialog" class="dialog-scrolling">
-        <div style="height: 150vh; border: dashed 2px rgb(var(--sl-color-neutral-200)); padding: 0 1rem;">
-            <p>Scroll down and give it a try! 👇</p>
-        </div>
-        <sl-button slot="footer" type="primary">Close</sl-button>
-    </sl-dialog>
-    <button class="dialog-scrolling2">adfvf</button>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+    <div class="container">
+        <div class="images">
+            <div class="image-container">
+                <div class="image" style="background-image: url(images/BestHQwallpapers.png)"></div>
+                <!-- <div class="image" style="background-image: url(https://unsplash.it/640/1000)"></div>
+                <div class="image" style="background-image: url(https://unsplash.it/800/800)"></div> -->
             </div>
         </div>
+        <div class="footer">Content</div>
     </div>
-    <img src="images/BestHQwallpapers.png" class="thumbnail" height="100" width="100" />
-    <div class="img-hover-zoom">
-        <img src="images/Running.jpg" alt="This zooms-in really well and smooth">
-    </div>
-    <script>
-        const dialog = document.querySelector('.dialog-scrolling');
-        const openButton = document.querySelector('.dialog-scrolling2');
-        const closeButton = dialog.querySelector('sl-button[slot="footer"]');
-
-        openButton.addEventListener('click', () => dialog.show());
-        closeButton.addEventListener('click', () => dialog.hide());
-    </script>
-    <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script>
-        const dots = document.getElementsByClassName("btn-dot");
-        const boxes = document.getElementsByClassName('boxes');
-
-        function isInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                rect.top <= rect.height / 2 &&
-                rect.bottom >= rect.height / 2 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        function setInactive() {
-            for (i = 0; i < dots.length; i++) {
-                if (dots[i].classList.contains("active-btn")) {
-                    console.log("hey");
-                    dots[i].classList.replace("active-btn", "disabled-btn");
-                } else {
-                    dots[i].classList.add("disabled-btn");
-                }
-            }
-        }
-
-        function setActive(j) {
-            dots[j].classList.replace("disabled-btn", "active-btn");
-        }
-
-        function updateDots() {
-            for (j = 0; j < boxes.length; j++) {
-                if (isInViewport(boxes[j])) {
-                    setInactive();
-                    setActive(j);
-                }
-            }
-        }
-
-
-        const box = document.querySelector('.box');
-        const box1 = document.querySelector('.box1');
-        const message = document.querySelector('#message');
-        const message1 = document.querySelector('#message1');
-
-
-        console.log("boxes ", boxes);
-
-
-        document.addEventListener('scroll', function () {
-
-
-            const messageText = isInViewport(box) ?
-                'The box is visible in the viewport' :
-                'The box is not visible in the viewport';
-
-            message.textContent = messageText;
-
-            const messageText1 = isInViewport(box1) ?
-                'The box1 is visible in the viewport' :
-                'The box1 is not visible in the viewport';
-
-            message1.textContent = messageText1;
-            // setInactive();
-            updateDots();
-
-        }, {
-            passive: true
-        });
-    </script>
 </body>
 
 </html>

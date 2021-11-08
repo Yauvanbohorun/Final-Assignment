@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+    .column1,
+    .column2,
+    .column3 {
+        width: 100%;
+    }
+}

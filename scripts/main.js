@@ -1,7 +1,7 @@
 let animation = anime({
     targets: '.moto',
     // Properties 
-    translateX: 100,
+    translateX: 120,
     borderRadius: 50,
     // Property Parameters
     duration: 3000,
@@ -17,18 +17,18 @@ const scroller = new LocomotiveScroll({
     scrollFromAnywhere: true
 });
 
-$('#moreinfo-diet-plan').on('show.bs.modal', function (event) {
+$('#moreinfo-diet-plan').on('show.bs.modal', function(event) {
 
     scroller.stop();
 });
-$("#moreinfo-diet-plan").on('hidden.bs.modal', function (e) {
+$("#moreinfo-diet-plan").on('hidden.bs.modal', function(e) {
     scroller.start();
 });
 
 window.addEventListener("load", () => {
 
     scroller.update();
-    setTimeout(function () {
+    setTimeout(function() {
         document.getElementById("my_audio").play();
     }, 5000);
 
