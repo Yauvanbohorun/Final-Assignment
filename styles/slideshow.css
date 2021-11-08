@@ -1,15 +1,15 @@
-#all_slides{
+#all_slides {
     position: relative;
     height: 240px;
     /* width:440px; */
     padding: 0px;
     margin: 0px;
     list-style-type: none;
-  padding-right: 60px;
+    padding-right: 60px;
     padding-left: 60px;
 }
 
-.slide{
+.slide {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -20,118 +20,126 @@
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
-    transition: opacity 1s;    font-size: 40px;
+    transition: opacity 1s;
+    font-size: 40px;
     padding: 40px;
     box-sizing: border-box;
     background: #333;
     color: #fff;
     background-size: cover;
-    
 }
 
-.active{
+.active {
     opacity: 1;
     z-index: 2;
 }
 
-.controls{
+.controls {
     display: none;
 }
 
-.slide:nth-of-type(1){
-  background-image: url('../images/Running.jpg');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.slide:nth-of-type(1) {
+    /* Jogging. n.d. “Girl Jogging Wallpapers.” WallpaperCave.  https://wallpapercave.com/girl-jogging-wallpapers.  */
+    background-image: url('../images/Running.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
-.slide:nth-of-type(2){
-  background-image: url('../images/Swmming.jpg');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat
+.slide:nth-of-type(2) {
+    /* Swimming. n.d. “Swimming Pictures, Images and Stock Photos”. iStockhttps://www.istockphoto.com/search/2/image?phrase=swimming.  */
+    background-image: url('../images/Swmming.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat
 }
 
-.slide:nth-of-type(3){
-  background-image: url('../images/Walking.jpg');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat
+.slide:nth-of-type(3) {
+    /* Walking exercise.n.d. “Walking Exercise Pictures, Images and Stock Photos”. Istock.
+https://www.istockphoto.com/search/2/image?phrase=walking+exercise.
+ */
+    background-image: url('../images/Walking.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat
 }
 
-.slide:nth-of-type(4){
-  background-image: url('../images/Weight-lifting.jpg');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat
+.slide:nth-of-type(4) {
+    /* Superfoods, Tropeaka.2019. “8 Principles of Weight Training Every Gym-Goer Needs to Know.” Tropeaka. https://tropeaka.com/blogs/the-latest/8-principles-of-weight-training-every-gym-goer-needs-to-know.  */
+    background-image: url('../images/Weight-lifting.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat
 }
 
-.slide:nth-of-type(5){
-  background-image: url('../images/cycling.gif');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat
+.slide:nth-of-type(5) {
+    /* Phelamei, Salome.2019. “Is cycling good or bad for the knees? Here’s what you need to know”.Timesnownews. https://www.timesnownews.com/health/article/is-cycling-good-or-bad-for-the-knees-heres-what-you-need-to-know/490252.  */
+    background-image: url('../images/cycling.gif');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat
 }
 
-.slide:nth-of-type(6){
-  background-image: url('../images/YOGA.jpg');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat
+.slide:nth-of-type(6) {
+    /* Yoga.n.d. “HD Wallpaper: Indoor Yoga Sport Beautiful Girl Photo, Exercising, Wellbeing.” Wallpaper Flare. https://www.wallpaperflare.com/indoor-yoga-sport-beautiful-girl-photo-exercising-wellbeing-wallpaper-pmlly. */
+    background-image: url('../images/YOGA.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat
 }
 
-.controls{
-  display: inline-block;
-  position: relative;
-  top: 1rem;
-  right: .5rem;
-  border: none;
-  outline: none;
-  font-size: 20px;
-  cursor: pointer;
-  border: 2px solid #fff;
-  border-radius: 1.5rem;
-  background: gold;
-  width: 3rem;
-  height: 3rem;
-  margin-left: .5rem;
-  /* padding-right: 20px; */
+.controls {
+    display: inline-block;
+    position: relative;
+    top: 1rem;
+    right: .5rem;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 1.5rem;
+    background: gold;
+    width: 3rem;
+    height: 3rem;
+    margin-left: .5rem;
+    /* padding-right: 20px; */
 }
 
 .controls:hover,
-.controls:focus{
-  background: #eee;
-  color: #333;
+.controls:focus {
+    background: #eee;
+    color: #333;
 }
 
-.main-container .slideshow{
-  position: relative;
-  padding-bottom: 30px;
-  padding-right: 140px;
-  padding-left: 140px;
+.main-container .slideshow {
+    position: relative;
+    padding-bottom: 30px;
+    padding-right: 140px;
+    padding-left: 140px;
 }
 
-.buttons{
-  position: absolute;
-  right: .5rem;
-  top: 0px;
-  z-index: 10;
-  font-size: 0px;
-  padding-right: 125px;
+.buttons {
+    position: absolute;
+    right: .5rem;
+    top: 0px;
+    z-index: 10;
+    font-size: 0px;
+    padding-right: 125px;
 }
 
-.fancy{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: -2rem;
-  width: 7rem;
-  height: 2rem;
-  background: gold;
-  color: #000;
-  z-index: 3;
-  transform: rotate(-45deg);
-  border-radius: 1rem;
+.fancy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: -2rem;
+    width: 7rem;
+    height: 2rem;
+    background: gold;
+    color: #000;
+    z-index: 3;
+    transform: rotate(-45deg);
+    border-radius: 1rem;
 }
