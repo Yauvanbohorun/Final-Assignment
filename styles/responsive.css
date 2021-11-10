@@ -1,7 +1,54 @@
 @media screen and (max-width: 768px) {
-    .column1,
-    .column2,
-    .column3 {
+    #nav .nav-brand {
         width: 100%;
+        text-align: center;
+        object-fit: cover;
+        margin-bottom: 7%;
+        padding-right: 0%;
+    }
+    #nav-items {
+        text-align: center;
+        margin-bottom: 7%;
+        width: 100%;
+    }
+    .navbar-brand.navbar-right {
+        margin-left: 0%;
+        width: 100%;
+    }
+    .about-us-content {
+        min-width: 300px;
+        padding-right: 35px;
+    }
+    .img-about-us {
+        width: 100%;
+        margin-top: 3%;
+        padding: 0%;
+    }
+    .column3 {
+        position: fixed;
+        padding-left: 93%;
+    }
+    .img-exercise {
+        margin-top: 6%;
+    }
+    .diet-plan-img {
+        margin-top: 60%;
+    }
+    #exercise {
+        padding-top: 12%;
+    }
+    .main-container .slideshow {
+        padding-left: 30px;
+    }
+    #all_slides {
+        width: 100%;
+        min-height: 200px;
+    }
+    .buttons {
+        margin-bottom: 7%;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 0%
     }
 }

@@ -10,9 +10,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="styles/index.css" type="text/css">
+    <link rel="stylesheet" href="styles/slideshow.css" type="text/css">
     <link rel="stylesheet" href="styles/responsive.css" type="text/css">
     <link rel="stylesheet" href="styles/animation.css" type="text/css">
-    <link rel="stylesheet" href="styles/slideshow.css" type="text/css">
 </head>
 
 <body data-scroll-container>
@@ -29,7 +29,7 @@
                                 <!-- World of obesity.2021. “Homepage” .World Obesity Federation. https://www.worldobesity.org/.  -->
                                 <img src="images/Logo.png" id="logo" alt="Logo">
                             </div>
-                            <div>
+                            <div id="nav-items">
                                 <li class="nav-item">
                                     <a class="nav-link active" href="">HOME</a>
                                 </li>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="column2 home-image">
                             <!-- Full figured woman. 2021. “505 Royalty-Free Stock Photos & Pictures of Full figured woman.” Depositphotos. https://depositphotos.com/stock-photos/full-figured-woman.html.  -->
-                            <img src="images/Full-figure-woman.png" alt="Logo"></a>
+                            <img src="images/Full-figure-woman.png" alt="Logo">
                         </div>
                         <div class="column3" data-scroll data-scroll-sticky data-scroll-target="#btn-sticky">
                             <div class="btn-dots">
@@ -91,7 +91,7 @@
                     </div>
                     <div class="display-content">
                         <div class="about-us-content">
-                            <p>
+                            <p class="left-align">
                                 Over 50 regional and national obesity groups are represented by the World Obesity Federation, which unites professional representatives of the scientific, medical, and research sectors. World Obesity is a crucial partner with international obesity organizations,
                                 notably the World Health Organization.
                                 <br>
@@ -102,13 +102,13 @@
                         </div>
                         <div class="img-about-us">
                             <!-- Primary doctor care. 2020, “Happy Laughing Female Doctors in Hospital Gowns in Row.” Freepik. https://www.freepik.com/free-photo/happy-laughing-female-doctors-hospital-gowns-row_10626391.htm.  -->
-                            <img src="images/Primary-doctor-care.png" height="300px" alt="Logo"></a>
+                            <img src="images/Primary-doctor-care.png" height="300px" alt="Logo">
                         </div>
                     </div>
                 </div>
                 <!-- </section> -->
-                <div id="exercise" class="sub-section boxes">
-                    <div class="subtitle">
+                <div id="exercise" class="sub-section">
+                    <div class="subtitle boxes">
                         <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-repeat="true">
                             EXERCISE</h2>
                     </div>
@@ -202,7 +202,7 @@
                             <p class="left-align text-black">We provide the only internationally recogmised course on obesity management. Read more here.
                             </p>
 
-                            <sl-button type="success">READ MORE</sl-button>
+                            <sl-button class="scopeLearning" type="success">READ MORE</sl-button>
                         </div>
                     </div>
                     <div>
@@ -211,7 +211,7 @@
                             <p class="left-align text-black">We offer various statistics, map and key data.<br> Around the topic of obesity. You can find all that.<br>And more here.
                             </p>
 
-                            <sl-button type="success">READ MORE</sl-button>
+                            <sl-button class="globalObesity" type="success">READ MORE</sl-button>
                         </div>
                     </div>
                     <div>
@@ -220,7 +220,7 @@
                             <p class="left-align text-black">We have developed five key areas of policy that are a priority to us. Check out them?
                             </p>
 
-                            <sl-button type="success">READ MORE</sl-button>
+                            <sl-button class="policyPriories" type="success">READ MORE</sl-button>
                         </div>
                     </div>
                 </div>
@@ -233,9 +233,12 @@
                     </div>
                     <div style="text-align: end;">
                         <a class="navbar-brand navbar-right" href="#">
+                            <!-- Facebook Logo 2021. “Facebook Logo”. 1oooLOGOS. https://1000logos.net/facebook-logo/.  -->
                             <img alt="facebook-icon" src="images/Facebook-logo.png" width='48px' height='30px'>
-                            <img alt="facebook-icon" src="images/instagram.png" class="instagram" width='25px' height='25px'>
-                            <img alt="facebook-icon" src="images/twitter2.png" width='25px' height='25px'>
+                            <!-- Instagram.2021. “Instagram Logo Icon. PNG - Free Download.” Pinterest.https://www.pinterest.com/pin/737323770235918470/.  -->
+                            <img alt="instagram-icon" src="images/instagram.png" class="instagram" width='25px' height='25px'>
+                            <!-- Brigid, Nichols.2021. “Transparent twitter icon”. Kindpng. https://www.kindpng.com/imgv/JxmioT_transparent-twitter-icon-transparent-twitter- -->
+                            <img alt="twitter-icon" src="images/twitter2.png" width='25px' height='25px'>
                         </a>
                     </div>
                 </div>
@@ -294,12 +297,15 @@
             </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 
     <script src="scripts/main.js"></script>
     <script src="scripts/slideshow.js"></script>
